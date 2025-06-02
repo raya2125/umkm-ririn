@@ -1,0 +1,92 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #bccbdf, #c0ccd4, #fff9b7, #fcc2e2);
+    background-size: 400% 400%;
+    animation: gradientBG 20s ease infinite;
+    min-height: 100vh;
+}
+
+@keyframes gradientBG {
+    0% {background-position: 0% 50%;}
+    50% {background-position: 100% 50%;}
+    100% {background-position: 0% 50%;}
+}
+
+header {
+    background: linear-gradient(to right, #455a64, #90a4ae);
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2rem;
+}
+
+main {
+    padding: 40px 20px;
+}
+
+.kategori {
+    margin-bottom: 50px;
+}
+
+.kategori h2 {
+    color: #1e3a8a;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    border-left: 5px solid #1e3a8a;
+    padding-left: 12px;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: start;
+}
+
+.card {
+    background-color: white;
+    padding: 18px 24px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-decoration: none;
+    color: #333;
+    flex: 1 1 200px;
+    text-align: center;
+    transition: transform 0.3s ease, background 0.3s ease;
+    font-weight: bold;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    background-color: #fef3c7;
+    color: #d97706;
+}
+
+footer {
+    background-color: #546e74;
+    color: white;
+    text-align: center;
+    padding: 6px 0;
+    font-size: 0.75rem;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+    margin-top: 40px;
+}
